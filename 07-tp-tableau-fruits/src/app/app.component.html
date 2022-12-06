@@ -1,0 +1,28 @@
+
+<div class="container">
+  <div class="col-4">
+    <!-- ouvrir une ligne -->
+<div class="row">
+  <div class="col-10">
+    <input class="form-control my-2" [(ngModel)]="fruit" placeholder="Ici votre fruit">
+  </div>
+  <div class="col-2">
+    <button 
+    (click)="onAjouter()"
+    class="btn btn-primary my-2">
+      <i class="fa fa-plus"></i>
+    </button>
+  </div>
+</div>
+    <ul>
+      <li *ngFor="let fruit of fruits; index as indice">
+        {{ fruit}}
+        <button class="btn btn-danger"
+        (click)="onEnlever(indice)"
+        >
+          <i class="fa fa-trash"></i>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
