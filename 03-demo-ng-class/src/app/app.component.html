@@ -1,0 +1,11 @@
+<h1>{{ date1 | date: 'dd MMM YYYY'}}</h1>
+<h1>{{ valeur | number: '1.0-1'}}</h1>
+
+<!-- <div class="bg-rouge bg-vert"> lorem </div> -->
+<div 
+class="myDiv"
+[ngClass]="{
+  'bg-rouge' : test =='off',
+  'bg-vert' : test =='on'
+}"> lorem </div>
+<button (click)="onChange()">GO</button>
