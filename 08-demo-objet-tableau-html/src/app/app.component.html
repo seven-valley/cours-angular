@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="col-4">
+    <!-- table>thead>tr>th*2 -->
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <!-- ouvre une ligne -->
+          <th>Fruits</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <!-- tbody>tr*2>td*2 -->
+      <tbody>
+        
+        <tr *ngFor="let c of couleurs">
+          <td>{{ c }}</td>
+          <td>
+            <button class="btn btn-danger">
+              <i class="fa fa-trash"></i>
+            </button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+    <!-- table>thead>tr>th*2^^tbody>tr*2>td*2 -->
+    <hr> <!-- ligne -->
+    <hr>
+    <table class="table table-striped mt-4">
+      <thead>
+        <tr>
+          <th>Prénom</th>
+          <th>Nom</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of personnes">
+          <td>{{ p.prenom }}</td>
+          <td>{{ p.nom }}</td>
+          <td>{{ p.age }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
