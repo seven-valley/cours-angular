@@ -1,0 +1,42 @@
+<div class="container">
+    <!-- 6 c'est 6/12 50% (12 colonnes = 100%) -->
+    <div class="col-6">
+        <h1 class="my-2">Calculer IMC</h1>
+        <input
+        class="form-control"
+        [(ngModel)]="poids" placeholder="Poids en kg.">
+        <!-- ALT + SHIFT + fleche bas ou haut dupliquer -->
+        <!-- ALT + fleche changer la ligne -->
+        <!-- CTRL + D : multi curseur -->
+        <!-- my-0 à my-5 espacement en haut et en bas-->
+       
+        <input
+        class="form-control my-2"
+        [(ngModel)]="taille" placeholder="Taille en m.">
+        
+        <button 
+        class="btn btn-primary my-2"
+        (click)="onCalculer()">
+        
+        <i class="fa-solid fa-calculator my-2"></i>
+        
+        </button>
+        <h1>{{ titreImc}}</h1>
+        <h2></h2>
+        <!-- '1'== 1 -->
+        <!-- 1===1 -->
+        <div 
+        [ngClass]="{
+          'alert':true,
+          'alert-warning':tranche==='maigreur',
+          'alert-success':tranche==='normal',
+          'alert-danger':tranche==='surpoids'
+        }"
+        >
+          {{ tranche }}
+          </div>
+        
+         
+    </div>
+</div>
+
