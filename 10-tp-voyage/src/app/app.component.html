@@ -1,0 +1,29 @@
+<div class="container">
+
+  <div class="col-3">
+    <h1 class="h2">Mes voyages</h1>
+  <div class="row">
+    <div class="col-10">
+      <input [(ngModel)]="nom" class="form-control">
+    </div>
+    <div class="col-2">
+      <button class="btn btn-primary"
+      (click)="onAjouter()"
+      >
+        <i class="fa fa-plus"></i>
+      </button>
+    </div>
+  </div>
+    <ul class="list-group">
+      <app-voyage 
+      *ngFor="let idea of ideas;index as i"
+      [idea]="idea"
+      [indice]="i"
+      >
+      </app-voyage>
+    </ul>
+    <button class="btn btn-success mt-3" (click)="onChangeAll()">
+      <i class="fa fa-check"></i> Tout Valider
+    </button>
+  </div>
+</div>

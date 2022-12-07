@@ -1,0 +1,22 @@
+<li class="list-group-item"
+[ngClass]="{
+    'list-group-item-primary':idea.aller==false,
+    'list-group-item-warning':idea.aller
+}"
+>
+        <h2 class="h4">{{ idea.nom}}</h2>
+        <button class="btn" 
+        [ngClass]="{
+          'btn-success':idea.aller==false,
+          'btn-danger':idea.aller
+      }"
+        (click)="onChanger()"
+        >
+          <i class="fa"
+          [ngClass]="{
+            'fa-check':idea.aller==false,
+            'fa-trash':idea.aller
+        }"
+          ></i>
+        </button>
+</li> 
