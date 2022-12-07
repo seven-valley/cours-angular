@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="col-4">
+    <div class="row my-2"><!-- ouverture de ligne -->
+      <!-- my-2 margin top & botton -->
+      <div class="col-10">  <!-- je prends 10 colonnes sur 12 -->
+        <input class="form-control" [(ngModel)]="produit">
+      </div>
+      <div class="col-2 ">
+        <button class="btn btn-primary" (click)="onAjouter()">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+    </div>
+   <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Produit</th>
+        <th colspan="2">Actions</th>
+        <!-- colspan=2 rassembler/merge 2 th -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of liste;index as i"
+      [ngClass]="{'table-danger': p.acheter}"
+      >
+        <td>{{i}}</td>
+        <td
+        [ngClass]="{'barre': p.acheter}"
+        >{{p.nom}}</td>
+        <td>
+          <button class="btn btn-warning"
+            (click)="onAcheter(i)"
+          >
+            <i class="fa fa-check"></i>
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-danger"
+            (click)="onEnlever(i)"
+          >
+            <i class="fa fa-trash"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+   </table>
+  </div>
+</div>
