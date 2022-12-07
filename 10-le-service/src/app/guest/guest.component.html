@@ -1,0 +1,8 @@
+<p 
+[ngClass]="{'bg-danger':personne.viens == false}"
+>
+
+    {{personne.prenom}}
+    {{personne.nom}}
+    <button (click)="onChanger()">change</button>
+</p>

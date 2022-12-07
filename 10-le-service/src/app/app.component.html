@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="col-4">
+        <!-- .col-4 +tab -->
+    <app-guest *ngFor="let p of personnes;index as i"
+    [personne]="p"
+    [indice]="i"
+    >
+    </app-guest>
+    <button (click)="onAnnuler()">Annuler</button>
+</div>
+</div>
