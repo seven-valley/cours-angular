@@ -1,0 +1,23 @@
+Créer un business object BO 
+Idea 
+- nom:string
+- aller:boolean
+app\models\idea.ts
+
+Créer un service IdeaService
+app\services\idea.service.ts
+
+Créer un composant voyage
+Envoyer un objet Idea au composant voyage
+(component Root HTML app.component.html)
+<app-voyage 
+*ngFor="let idea of tabIdea;index as i" 
+[idea]="idea" [indice]="i"> 
+
+Mettre le tableau de Idea dans le service
+
+Ajouter une méthode 
+pour changer l'état de "aller" ->true ou false
+
+Ajouter une méthode
+pour changer tous les état en true

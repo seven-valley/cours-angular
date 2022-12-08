@@ -1,0 +1,13 @@
+Calculer Indice de Masse Coporelle
+2 variables
+poids = en kilogramme
+taille = en metre
+
+imc = poids / (taille*taille)
+
+24.8 
+arrondir à 1 chiffre après la virgule
+
+imc < 18 maigreur
+18 < imc < 25 normal
+imc > 25 surpoids

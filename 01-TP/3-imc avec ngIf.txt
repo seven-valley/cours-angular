@@ -1,0 +1,4 @@
+Dans le TP IMC
+avec *ngIF
+ajouter un carré noir 
+si la personne est en surpoids

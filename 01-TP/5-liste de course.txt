@@ -1,0 +1,12 @@
+Créer Une Classe Business Object (models)
+Classe Item  app/models/item.ts
+avec un nom 
+et un état : acheter true/false
+
+Ajouter des items à la liste de courses
+Quand l'Item est acheté : changer la couleur
+Il possible d'ajouter un Item à la liste
+Il possible d'enlever un Item à la liste
+
+<tr class="table-primary">...</tr>
+<tr class="table-secondary">...</tr>

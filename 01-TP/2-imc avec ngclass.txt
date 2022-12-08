@@ -1,0 +1,9 @@
+Modifier le TP IMC
+
+pour afficher la tranche
+avec une couleur différente en background
+et en utilisant [ngClass]
+
+alert-warning
+alert-success
+alert-danger

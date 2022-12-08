@@ -1,0 +1,13 @@
+créer un champ input pour saisir le nom du film
+
+A partir du nom du film 
+Afficher 
+- l'image du film dans une balise <img>
+- le nom du film
+- l'année
+- la note Internet Movie Database
+_____________________________________
+https://www.omdbapi.com/?apikey='+key+'&t='+film;
+changer t=star wars dans la requete
+par s=star
+afficher les images des 10 films
