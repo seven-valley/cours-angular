@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="col-4">
+        <h1>Films</h1>
+        <div class="row mt-2">
+            <div class="col-10">
+                <input [(ngModel)]="titre">
+            </div>
+            <div class="col-2">
+                <button class="btn btn-primary"
+                (click)="onRecherche()"
+                >
+                    <i class="fa fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div>
+            <h1>{{ titreFilm}}</h1>
+            <h2>{{anneeFilm}}</h2>
+            <img [src]="imageFilm" width="200">
+        </div>
+        <button class="btn btn-success" (click)="onSave()">
+            save
+        </button>
+        <br><br>
+        <button class="btn btn-dark" (click)="onLecture()">
+            lecture
+        </button>
+        
+    </div>
+</div>
