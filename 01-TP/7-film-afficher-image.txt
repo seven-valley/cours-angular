@@ -11,3 +11,8 @@ https://www.omdbapi.com/?apikey='+key+'&t='+film;
 changer t=star wars dans la requete
 par s=star
 afficher les images des 10 films
+____________________________________
+en face de chaque film mettre un bouton plus
+stocker des films dans tableau de favoris
+afficher ce tableau de favoris
+enlever un film du tableau de favoris
