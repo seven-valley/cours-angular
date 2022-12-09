@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "b4d2c7d6-8ec3-478a-a915-73199ad4e285",
+		"name": "Personnes API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ajouter John DOE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"prenom\":\"John\",\"nom\":\"DOE\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://eni-super-appi-default-rtdb.europe-west1.firebasedatabase.app/personnes.json",
+					"protocol": "https",
+					"host": [
+						"eni-super-appi-default-rtdb",
+						"europe-west1",
+						"firebasedatabase",
+						"app"
+					],
+					"path": [
+						"personnes.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Liste de Personnes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eni-super-appi-default-rtdb.europe-west1.firebasedatabase.app/personnes.json",
+					"protocol": "https",
+					"host": [
+						"eni-super-appi-default-rtdb",
+						"europe-west1",
+						"firebasedatabase",
+						"app"
+					],
+					"path": [
+						"personnes.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modifier",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"prenom\":\"Jean\",\"nom\":\"DUJARDIN\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://eni-super-appi-default-rtdb.europe-west1.firebasedatabase.app/personnes/-NIq0vcbA1CEoLTCBwJa.json",
+					"protocol": "https",
+					"host": [
+						"eni-super-appi-default-rtdb",
+						"europe-west1",
+						"firebasedatabase",
+						"app"
+					],
+					"path": [
+						"personnes",
+						"-NIq0vcbA1CEoLTCBwJa.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Enlever personnes",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://eni-super-appi-default-rtdb.europe-west1.firebasedatabase.app/personnes/-NIq11lCQXR4L4RAmnJk.json",
+					"protocol": "https",
+					"host": [
+						"eni-super-appi-default-rtdb",
+						"europe-west1",
+						"firebasedatabase",
+						"app"
+					],
+					"path": [
+						"personnes",
+						"-NIq11lCQXR4L4RAmnJk.json"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
