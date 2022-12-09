@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <h1>Films</h1>
+            <div class="row mt-2">
+                <div class="col-10">
+                    <input class="form-control" [(ngModel)]="titre">
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-primary" (click)="onRecherche()">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+                <table class="table table-striped">
+                    <tbody>
+                        <tr class="align-middle" *ngFor="let f of films;index as i">
+                            <td>{{ f.Title}}</td>
+                            <td><img width="80" [src]="f.Poster"></td>
+                            <td>
+                                <button (click)="onAjouter(i)" class="btn btn-success">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="offset-1 col-4 mt-5">
+                <table class="table table-striped">
+                    <tbody>
+                        <tr class="align-middle"  *ngFor="let f of favoris;index as i">
+                            <td>{{ f.Title}}</td>
+                            <td><img width="80" [src]="f.Poster"></td>
+                            <td>
+                                <button (click)="onEnlever(i)" class="btn btn-danger">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
